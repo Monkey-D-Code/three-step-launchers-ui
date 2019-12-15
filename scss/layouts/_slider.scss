@@ -1,0 +1,50 @@
+.slider { 
+    width : 100%;
+    height: $slider_height;
+    overflow: hidden;
+    .slide{
+        &:first-child{
+            animation: sliderAnimation 10s ease-in-out infinite;
+            animation-direction: alternate;
+            animation-delay: 3s;
+        }
+        width : 100%;
+        height: $slider_height;
+        position: relative;
+        img {
+            height: $slider_height;
+            width : 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+        .caption {
+            position: absolute;
+            bottom : 1em;
+            right : 0;
+            background-image: linear-gradient(
+                to right , 
+                rgba($bg_color_1 , 0.9),
+                rgba($bg_color_2 , 0.9),
+            );
+            padding: 2em 1em;
+            -webkit-box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.7);
+            -moz-box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.7);
+            box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.7);
+            text-align: right;
+            h2{
+                color : $text_dark_color;
+                @media (max-width : 420px){
+                    font-size: 1.5em;
+                }
+                font-size: 2.5em;
+            }
+            h5{
+
+                font-size: 1em;
+                color : lighten($color: $text_dark_color, $amount: 10%);
+                
+            }
+
+        }
+    }
+}

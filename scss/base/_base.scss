@@ -1,0 +1,16 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+
+body {
+    box-sizing: border-box;
+
+    h1 , h2 , h3 , h4{
+        font-family: $heading_font;
+    }
+
+    h5 , h6 , p {
+        font-family: $paragraph_font;
+    }
+}

@@ -1,0 +1,20 @@
+// importing abstract
+@import './abstract/variables';
+@import './abstract/functions';
+@import './abstract/mixins';
+
+
+// importing base files
+@import './base/animations';
+@import './base/typography';
+@import './base/utilities';
+@import './base/base';
+
+
+// importing components
+@import './components/link';
+
+// importing layouts
+@import './layouts/header';
+@import './layouts/slider';
+@import './layouts/navbar';
