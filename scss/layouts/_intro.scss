@@ -1,0 +1,61 @@
+.intro{
+    .features{
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        display: flex;
+        
+        .single-feature{
+            position: relative;
+            width: 25vw;
+            @media (max-width : 768px){
+                width : 50vw;
+                animation: featureSlide768 25s linear infinite;
+                animation-delay: 2s;
+            }
+            @media (max-width : 420px){
+                width : 100vw;
+                animation: featureSlide420 35s linear infinite;
+                animation-delay: 2s;
+            }
+            animation: fratureSlide 20s linear infinite;
+            animation-delay: 2s;
+            img{
+                width: 25vw;
+                @media (max-width : 768px){
+                    width : 50vw;
+                }
+                @media (max-width : 420px){
+                    width : 100vw;
+                }
+                height: 500px;
+                object-fit: cover;
+            }
+            .text{
+                position: absolute;
+                bottom: 3px;
+                right : 0;
+                width : 80%;
+                padding: 0.5em;
+                -webkit-box-shadow: -13px -11px 6px -10px rgba(0,0,0,0.29);
+                -moz-box-shadow: -13px -11px 6px -10px rgba(0,0,0,0.29);
+                box-shadow: -13px -11px 6px -10px rgba(0,0,0,0.29);
+
+                background-image: linear-gradient(
+                    to right,
+                    rgba($bg_color_1 , 0.8),
+                    rgba($bg_color_2 , 0.8),
+                );
+                
+                h2{
+                    font-size: 1.6em;
+                    color: lighten($text_dark_color , 10%);
+                }
+                p{
+                    color: darken($text_color_4,25%);
+
+                }
+            }
+        }
+    }
+}

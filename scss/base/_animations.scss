@@ -26,3 +26,20 @@
     0%{color : darken($bg_color_2,10%)}
     100%{color: darken($bg_color_1,15%)}
 }
+
+@keyframes fratureSlide{
+    0%{transform: translate(0);}
+    100%{
+        transform: translate(-125vw);
+       
+    }
+}
+
+@keyframes featureSlide768{
+    0%{transform: translate(0);}
+    100%{transform: translate(-250vw);}
+}
+@keyframes featureSlide420{
+    0%{transform: translate(0);}
+    100%{transform: translate(-500vw);}
+}

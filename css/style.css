@@ -43,6 +43,24 @@
   100% {
     color: #d2a513; } }
 
+@keyframes fratureSlide {
+  0% {
+    transform: translate(0); }
+  100% {
+    transform: translate(-125vw); } }
+
+@keyframes featureSlide768 {
+  0% {
+    transform: translate(0); }
+  100% {
+    transform: translate(-250vw); } }
+
+@keyframes featureSlide420 {
+  0% {
+    transform: translate(0); }
+  100% {
+    transform: translate(-500vw); } }
+
 .active-slide-image {
   z-index: 2; }
 
@@ -608,3 +626,49 @@ a {
       margin: 0.6em 0;
       font-size: 1.1em;
       color: #FFFBBD; }
+
+.intro .features {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  display: flex; }
+  .intro .features .single-feature {
+    position: relative;
+    width: 25vw;
+    animation: fratureSlide 20s linear infinite;
+    animation-delay: 2s; }
+    @media (max-width: 768px) {
+      .intro .features .single-feature {
+        width: 50vw;
+        animation: featureSlide768 25s linear infinite;
+        animation-delay: 2s; } }
+    @media (max-width: 420px) {
+      .intro .features .single-feature {
+        width: 100vw;
+        animation: featureSlide420 35s linear infinite;
+        animation-delay: 2s; } }
+    .intro .features .single-feature img {
+      width: 25vw;
+      height: 500px;
+      object-fit: cover; }
+      @media (max-width: 768px) {
+        .intro .features .single-feature img {
+          width: 50vw; } }
+      @media (max-width: 420px) {
+        .intro .features .single-feature img {
+          width: 100vw; } }
+    .intro .features .single-feature .text {
+      position: absolute;
+      bottom: 3px;
+      right: 0;
+      width: 80%;
+      padding: 0.5em;
+      -webkit-box-shadow: -13px -11px 6px -10px rgba(0, 0, 0, 0.29);
+      -moz-box-shadow: -13px -11px 6px -10px rgba(0, 0, 0, 0.29);
+      box-shadow: -13px -11px 6px -10px rgba(0, 0, 0, 0.29);
+      background-image: linear-gradient(to right, rgba(238, 198, 67, 0.8), rgba(226, 78, 27, 0.8)); }
+      .intro .features .single-feature .text h2 {
+        font-size: 1.6em;
+        color: #49410d; }
+      .intro .features .single-feature .text p {
+        color: #382122; }
