@@ -9,3 +9,15 @@
     100% {margin-top: -(3*$slider_height);}
     
 }
+
+@keyframes imgSlideHorizontal {
+    0% {transform: translateX(0);}
+    5% {transform: translateX(0);}
+    10% {transform: translateX(-$card_width);}
+    30% {transform: translateX(-$card_width);}
+    40% {transform: translateX(-(2*$card_width));}
+    60% {transform: translateX(-(2*$card_width));}
+    70% {transform: translateX(-(3*$card_width));}
+    90% {transform: translateX(-(3*$card_width));}
+    100% {transform: translateX(0);}
+}
