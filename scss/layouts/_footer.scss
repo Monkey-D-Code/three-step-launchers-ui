@@ -1,0 +1,99 @@
+.footer{
+    
+    
+    width : 100%;
+    margin-top : 2em;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    @media (max-width : 768px){
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+    }
+    justify-content: space-around;
+    -webkit-box-shadow: 12px -11px 6px -7px rgba(0,0,0,0.29);
+    -moz-box-shadow: 12px -11px 6px -7px rgba(0,0,0,0.29);
+    box-shadow: 12px -11px 6px -7px rgba(0,0,0,0.29);
+
+    div{
+        padding : 2em 0.8em;
+    }
+    .brand-info{
+        width : 40%;
+        @media (max-width : 768px){
+            width: 90%;
+        }
+        h1 {
+            color : lighten($text_dark_color , 10%);
+        }
+        p{
+            margin-top : 0.6em;
+            font-size : 1.1em;
+            color: darken($bg_color_2 , 20%);
+            @media (max-width : 768px){
+                color: white;
+            }
+        }
+    }
+    .menu{
+        h2{
+            color : lighten($text_dark_color , 10%);
+
+        }
+        ul{
+            list-style-type: none;
+            border : 2px solid white;
+            padding : 0.4em;
+            border-radius: 0.3em;
+            margin-top : 0.4em;
+            li{
+                font-family: $cursive_font;
+                font-size: 1.2em;
+                margin : 0.4em 0;
+            }
+        }
+    }
+    .auth{
+        h2{
+            color : lighten($text_dark_color , 10%);
+        }
+        ul{
+            list-style-type: none;
+            li{
+                margin : 0.5em 0;
+                font-family: $paragraph_font;
+                background-color: white;
+                padding : 0.3em 1em;
+                width: fit-content;
+                font-size: 1.1em;
+                border-radius: 0.3em;
+                @media (max-width : 768px){
+                    margin : 0.5em auto;
+                }
+                a{
+                    color : darken($bg_color_1, 25%) !important;
+                }
+                
+            }
+        }
+    }
+    .contact{
+        width : 20%;
+        @media (max-width : 768px){
+            width: 80%;
+        }
+        h2{
+            color : lighten($text_dark_color , 5%);
+            margin-bottom: 0.4em;
+        }
+        p{
+            margin : 0.6em 0;
+            font-size: 1.1em;
+            color: $text_light_color;
+        }
+        
+    }
+}
