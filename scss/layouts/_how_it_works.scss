@@ -1,0 +1,69 @@
+.how-it-works{
+    
+    width: 100%;
+    background-size: cover;
+    margin : 1em 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    h1{
+        font-size: 3em;
+        background-color: white;
+        width: fit-content;
+        padding: 0.3em 0.5em;
+        border : 2px solid white;
+        color : darken($bg_color_2,10%);
+        animation: colorSwitch 1s ease-in-out infinite alternate;
+        @media (max-width : 420px){
+            font-size: 2.5em;
+        }
+    }
+
+    .methods{
+        width : 80%;
+        margin : 1em auto;
+        .slider-2{
+            margin : 1em;
+            .slide{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                margin : 1em 0;
+
+                @media(max-width : 420px){
+                    flex-flow: column;
+                }
+                img{
+                    height: 200px;
+                    width: 200px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    border : 3px solid white;
+                    margin : 0.7em;
+                }
+                .text {
+                    
+                    h3{
+                        font-size : 2em;
+                        color : $text_color_3;
+                    }
+                    p{
+                        font-size : 1.1em;
+                        color : $text_dark_color;
+                        border : 1px solid $text_dark_color;
+                        padding : 0.4em;
+                        border-radius: 5px;
+                        margin : 0.3em 0 ;
+                    }
+                    width : 50%;
+
+                    @media(max-width : 420px){
+                        width : 90%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

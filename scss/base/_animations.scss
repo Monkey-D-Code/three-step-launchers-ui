@@ -21,3 +21,8 @@
     90% {transform: translateX(-(3*$card_width));}
     100% {transform: translateX(0);}
 }
+
+@keyframes colorSwitch{
+    0%{color : darken($bg_color_2,10%)}
+    100%{color: darken($bg_color_1,15%)}
+}
