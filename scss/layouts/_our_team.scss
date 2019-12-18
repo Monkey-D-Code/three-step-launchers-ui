@@ -1,0 +1,16 @@
+.our-team{
+    min-height : 40em;
+    width : 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    h1{
+        background-color: white;
+        width: fit-content;
+        padding : 0.3em 0.4em;
+        font-size: 2.5em;
+        border : 2px solid white;
+        animation: colorSwitch 4s ease-in-out infinite alternate;
+        color : darken($bg_color_2,10%);
+    }
+}
