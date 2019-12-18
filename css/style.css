@@ -736,7 +736,6 @@ a {
         margin-top: -15px; }
 
 .our-team {
-  min-height: 40em;
   width: 100%;
   background-attachment: fixed;
   background-size: cover;
@@ -759,7 +758,10 @@ a {
     .our-team .team .member {
       margin: 1em;
       width: 300px;
-      position: relative; }
+      position: relative;
+      -webkit-box-shadow: 12px 13px 6px -10px rgba(0, 0, 0, 0.29);
+      -moz-box-shadow: 12px 13px 6px -10px rgba(0, 0, 0, 0.29);
+      box-shadow: 12px 13px 6px -10px rgba(0, 0, 0, 0.29); }
       .our-team .team .member img {
         width: 300px;
         height: 450px;
