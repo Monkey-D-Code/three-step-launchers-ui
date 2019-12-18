@@ -1,0 +1,46 @@
+.all-events{
+    margin-top : 6em;
+}
+
+.search-box{
+    position: fixed;
+    bottom : 1em;
+    right : 1em;
+    display: flex;
+    align-items: stretch;
+    z-index: 99;
+    input{
+        font-family: $heading_font;
+        color : lighten($text_dark_color ,20%);
+        font-size : 1.3em;
+        padding : 0.3em 0.4em;
+        border : none;
+        outline-color: $bg_color_2;
+        background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e24e1b' fill-opacity='0.18'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        -webkit-box-shadow: 4px 6px 7px -3px rgba(0,0,0,0.29);
+        -moz-box-shadow: 4px 6px 7px -3px rgba(0,0,0,0.29);
+        box-shadow: 4px 6px 7px -3px rgba(0,0,0,0.29);
+
+
+        &::placeholder{
+            font-family: $cursive_font;
+            color : $text_color_4;
+        }
+    }
+    .search-btn{
+        cursor: pointer;
+        background-color: $bg_color_2;
+        border : 2px solid $bg_color_2;
+        padding : 0.6em 0.5em;
+        outline-color: $bg_color_1;
+        color : $text_light_color;
+        transition: all 0.3s;
+        &:hover{
+            background-color: darken($bg_color_1 , 20%);
+            border : 2px solid darken($bg_color_1 , 20%);
+        }
+        &:active{
+            transform: translateY(3px);
+        }
+    }
+}
