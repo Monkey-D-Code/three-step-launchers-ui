@@ -1,0 +1,57 @@
+.contact-info{
+    margin-top : 6em;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    .map{
+        width : 50%;
+        @media (max-width : 1024px){
+            width : 100%;
+        }
+    }
+    .info{
+        width : 50%;
+        background-color: #ffffff;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .content{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width : 40%;
+            @media (max-width : 768px){
+                width : 70%;
+            }
+            padding : 1em;
+            background-image: linear-gradient(
+                to right,
+                rgba(darken($bg_color_1,10%),0.8),
+                rgba(darken($bg_color_2,10%),0.8),
+            );
+            -webkit-box-shadow: -14px -15px 6px -10px rgba(0,0,0,0.29);
+            -moz-box-shadow: -14px -15px 6px -10px rgba(0,0,0,0.29);
+            box-shadow: -14px -15px 6px -10px rgba(0,0,0,0.29);
+            color : lighten($text_dark_color , 10%);
+            h1{
+                span{
+                    color : $text_light_color;
+                    @media (max-width : 320px){
+                        font-size: 0.7em;
+                    }
+                }
+            }
+            h2{
+                span{
+                    color : $text_color_3;
+                    @media (max-width : 768px){
+                        font-size: 0.8em;
+                    }
+                    @media (max-width : 320px){
+                        font-size: 0.7em;
+                    }
+                }
+            }
+        }   
+        
+    }
+}
